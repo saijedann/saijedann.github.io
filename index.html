@@ -11,5 +11,18 @@
     
     <img src="https://horseyhooves.com/wp-content/uploads/2022/02/8-best-cowboy-hats-for-western-men.jpg.webp" alt="Trulli" width="500" height="333">
     
+    <script src="Tone.js"></script>
+    <script type = "text/javascript">
+         
+        var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        // create Oscillator node
+        var oscillator = audioCtx.createOscillator();
+        oscillator.connect(audioCtx.destination);
+
+        oscillator.start();
+
+        oscillator.stop(audioCtx.currentTime + 2);
+    
   </body>
   </html>
